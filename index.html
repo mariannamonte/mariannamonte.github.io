@@ -7,7 +7,7 @@
     <meta name="description" content="Arquiteta urbanista, Pesquisadora em estudos urbanos e Guia turística. Descubra NYC com quem entende de espaço, história urbana e detalhes invisíveis.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --noir: #0a0a0a;
@@ -24,7 +24,7 @@
         }
 
         body {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Montserrat', sans-serif;
             background: var(--noir);
             color: var(--blanc);
             line-height: 1.6;
@@ -64,36 +64,16 @@
             animation: fadeInUp 1.2s ease-out;
         }
 
-        .brand {
-            display: inline-block;
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .brand::before {
-            content: '';
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            border: 2px solid var(--accent);
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        .brand h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 8vw, 7rem);
-            font-weight: 900;
-            letter-spacing: -0.02em;
-            line-height: 0.95;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, var(--blanc) 0%, var(--accent) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        /* NYC Header Image */
+        .header-image {
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+            margin: 0 auto 2rem;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px var(--shadow);
+            animation: fadeInUp 1.2s ease-out;
         }
 
         .subtitle {
@@ -134,16 +114,6 @@
             }
         }
 
-        @keyframes pulse {
-            0%, 100% {
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 0.3;
-            }
-            50% {
-                transform: translate(-50%, -50%) scale(1.1);
-                opacity: 0.5;
-            }
-        }
 
     </style>
 </head>
@@ -153,14 +123,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="brand">
-                <h1>Te Guio<br>em NYC</h1>
-            </div>
-            
-            <p class="subtitle">Nova York Revelada</p>
-            
+            <img src="NYC.png" alt="New York City" class="header-image" title="New York City">
+
             <p class="bio">
-                Arquiteta urbanista, Pesquisadora em estudos urbanos e Guia turística
+                Arquiteta urbanista, Pesquisadora em estudos urbanos e<br>Guia turística
             </p>
             
             <p class="bio-secondary">
